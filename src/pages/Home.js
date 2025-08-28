@@ -128,7 +128,7 @@ const Home = () => {
  
   async function mintToken(_uri){
     const encodedFunction = web3.eth.abi.encodeFunctionCall({
-      name: "mintToken",
+      name: "mint",
       type: "function",
       inputs: [{
         type: 'string',
@@ -205,3 +205,4 @@ const Home = () => {
 };
 
 export default Home;
+
